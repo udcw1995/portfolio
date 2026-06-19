@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Chathuranga Wickramarathna is a software engineer with 5+ years of experience across backend systems, PHP applications, DevOps, testing, and modern web platforms."
+    />
+    <meta name="theme-color" content="#080806" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23080806'/%3E%3Ccircle cx='32' cy='32' r='18' fill='none' stroke='%23c8ff4d' stroke-width='8'/%3E%3C/svg%3E"
+    />
+    <title>Chathuranga Wickramarathna | Software Engineer</title>
+  </head>
+  <body>
+    <canvas id="webgl-scene" aria-hidden="true"></canvas>
+    <div class="ambient-texture" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Back to top">
+        <span class="brand__mark"></span>
+        <span data-profile="name">Software Developer</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#stack">Stack</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="header-cta" data-profile-link="email" href="mailto:hello@example.com">
+        Let’s build
+      </a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__inner">
+          <p class="eyebrow" data-animate>Software engineer / full-stack backend specialist</p>
+          <h1 id="hero-title" data-animate>
+            Chathuranga Wickramarathna
+          </h1>
+          <p class="hero__copy" data-animate>
+            I’m a software engineer with 5+ years of experience building practical,
+            reliable products across Node.js, PHP, microservices, databases, DevOps,
+            testing, and modern commerce platforms.
+          </p>
+
+          <div class="hero__actions" data-animate>
+            <a class="button button--primary" href="#work">
+              <span>View selected work</span>
+              <span class="button__icon" aria-hidden="true">↗</span>
+            </a>
+            <a class="button button--ghost" data-profile-link="email" href="mailto:hello@example.com">
+              <span>Start a project</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__metrics" data-animate aria-label="Portfolio highlights">
+          <div>
+            <strong>5+</strong>
+            <span>years of experience</span>
+          </div>
+          <div>
+            <strong>30+</strong>
+            <span>tools and platforms</span>
+          </div>
+          <div>
+            <strong>Full</strong>
+            <span>stack delivery</span>
+          </div>
+        </div>
+
+        <div class="hero__status" data-animate>
+          <span class="pulse" aria-hidden="true"></span>
+          Available for select builds
+        </div>
+      </section>
+
+      <section class="signal-strip" aria-label="Specialties">
+        <div class="signal-strip__track">
+          <span>Full-stack interfaces</span>
+          <span>Microservices</span>
+          <span>PHP ecosystems</span>
+          <span>Database design</span>
+          <span>DevOps pipelines</span>
+          <span>Test automation</span>
+        </div>
+      </section>
+
+      <section class="section intro-section" aria-labelledby="intro-title">
+        <div class="section__heading" data-reveal>
+          <p class="eyebrow">What I bring</p>
+          <h2 id="intro-title">A software engineer who can build the service, wire the workflow, and ship the product.</h2>
+        </div>
+        <div class="intro-grid">
+          <p data-reveal>
+            My experience spans API design, authentication, message queues, databases,
+            PHP frameworks, CI workflows, containerized deployments, and production
+            support on Linux-based infrastructure.
+          </p>
+          <div class="intro-points" data-reveal>
+            <span>Backend engineering</span>
+            <span>PHP application development</span>
+            <span>Microservices and queues</span>
+            <span>DevOps and test automation</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section work-section" id="work" aria-labelledby="work-title">
+        <div class="section__heading" data-reveal>
+          <p class="eyebrow">Selected builds</p>
+          <h2 id="work-title">Interfaces with a point of view and production discipline.</h2>
+        </div>
+        <div class="work-grid" data-projects></div>
+      </section>
+
+      <section class="section stack-section" id="stack" aria-labelledby="stack-title">
+        <div class="section__heading" data-reveal>
+          <p class="eyebrow">Technical stack</p>
+          <h2 id="stack-title">A categorized view of the tools I have worked with.</h2>
+        </div>
+        <div class="stack-layout">
+          <div class="stack-orbit" data-reveal aria-hidden="true">
+            <span>Node.js</span>
+            <span>Laravel</span>
+            <span>PostgreSQL</span>
+            <span>Docker</span>
+            <span>Next.js</span>
+            <span>RabbitMQ</span>
+          </div>
+          <div class="capability-list" data-capabilities></div>
+        </div>
+      </section>
+
+      <section class="section process-section" id="process" aria-labelledby="process-title">
+        <div class="section__heading" data-reveal>
+          <p class="eyebrow">Process</p>
+          <h2 id="process-title">A calm path from unclear idea to polished release.</h2>
+        </div>
+        <div class="process-list" data-process></div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-section__content" data-reveal>
+          <p class="eyebrow">Let’s talk</p>
+          <h2 id="contact-title">Need a software engineer who can move across the stack?</h2>
+          <p>
+            Send the rough idea, the existing codebase, or the production problem. I can
+            help build, improve, test, and deploy the system with steady engineering focus.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button--primary" data-profile-link="email" href="mailto:hello@example.com">
+            <span>Email me</span>
+            <span class="button__icon" aria-hidden="true">↗</span>
+          </a>
+          <a class="text-link" data-profile-link="github" href="https://github.com/" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+          <a class="text-link" data-profile-link="linkedin" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span data-current-year></span> <span data-profile="name">Software Developer</span></span>
+      <span>Software engineering portfolio built with GSAP and Three.js.</span>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
